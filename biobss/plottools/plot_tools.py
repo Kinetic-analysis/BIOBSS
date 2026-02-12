@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import plotly.graph_objects as go
 from numpy.typing import ArrayLike
-from plotly_resampler import register_plotly_resampler
 
 from ..timetools import *
 
@@ -90,8 +89,7 @@ def create_signal_plot_plotly(
     limit = 200000
 
     if len(signal) > limit:
-        Warning("Signal is too large and will be resampled. Consider using create_signal_plot instead")
-        register_plotly_resampler(mode="auto")
+        Warning("Signal is too large but cannot be resampled. Consider using create_signal_plot instead")
 
     if x_values is None:
         x_values = np.linspace(0, len(signal), len(signal))
