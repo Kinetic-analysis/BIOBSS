@@ -8,7 +8,7 @@ pandas>=2.1.1     # Minimum for Python 3.12
 plotly
 py_ecg_detectors>=1.3.2
 pyparsing>=3.0.7
-PyYAML>=6.0
+PyYAML>=6.0.1
 scipy>=1.11.2     # Minimum for Python 3.12
 pywavelets>=1.5.0 # Fixes the ImpImporter error
 sphinx-material==0.0.35
